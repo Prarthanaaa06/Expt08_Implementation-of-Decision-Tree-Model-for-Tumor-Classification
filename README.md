@@ -9,10 +9,103 @@ To implement and evaluate a Decision Tree model to classify tumors as benign or 
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+
+1. **Start**
+
+2. **Import Libraries**
+
+   * Import required libraries:
+
+     * `pandas`
+     * `train_test_split`
+     * `DecisionTreeClassifier`
+     * `seaborn`, `matplotlib`
+     * Evaluation metrics (`accuracy`, `classification_report`, `confusion_matrix`)
+
+3. **Load Dataset**
+
+   * Read dataset `tumor.csv` into a DataFrame
+   * Display:
+
+     * First few rows (`head()`)
+     * Column names
+
+4. **Select Features and Target**
+
+   * Define input features `X`:
+
+     * All columns except `Class`
+   * Define target variable `y`:
+
+     * `Class`
+
+5. **Split Dataset**
+
+   * Split data into:
+
+     * Training set (30%)
+     * Testing set (70%)
+   * Use `random_state = 42`
+
+---
+
+### **Model Training**
+
+6. **Create Decision Tree Model**
+
+   * Initialize `DecisionTreeClassifier`
+
+7. **Train Model**
+
+   * Fit the model using training data (`X_train`, `y_train`)
+
+---
+
+### **Prediction**
+
+8. **Make Predictions**
+
+   * Predict class labels using test data (`X_test`)
+   * Store predictions in `y_pred`
+
+---
+
+### **Model Evaluation**
+
+9. **Calculate Accuracy**
+
+   * Compute accuracy score
+
+10. **Generate Classification Report**
+
+* Display:
+
+  * Precision
+  * Recall
+  * F1-score
+
+11. **Compute Confusion Matrix**
+
+* Generate confusion matrix comparing actual vs predicted values
+
+---
+
+### **Visualization**
+
+12. **Plot Confusion Matrix**
+
+* Use heatmap to visualize confusion matrix
+* Add:
+
+  * X-axis label → Predicted
+  * Y-axis label → Actual
+  * Title
+
+13. **Display Plot**
+
+14. **End**
+
+---
 
 ## Program:
 ```
